@@ -1,0 +1,12 @@
+$usuario = $_POST["usuari"];
+		$pass = $_POST["password"];
+		$myFile = "usuario.csv";
+			if (file_exists($myFile)) {
+		  $myFile = fopen("usuario.csv","a") or die("El fichero no se peude abrir");
+		  fputcsv($myFile, array($usuario,$pass));
+		} else {
+		  $myFile = fopen("usuario.csv","w") or die("El fichero no se peude abrir");
+		  fputcsv($myFile, array('Alumne','Clau'));
+		  fputcsv($myFile, array($usuario,$pass));
+
+		}

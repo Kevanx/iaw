@@ -1,0 +1,54 @@
+<?php
+session_start();
+ ?>
+<html>
+
+<head>
+  <title>Institut MVM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="logomvm_www_JPG.jpg" alt="Italian Trulli" height=200px>
+    <h1>
+      <header>Institut Manuel Vázquez Montalbán</header>
+    </h1>
+  </div>
+  <form method="post" action="vacant.php">
+    <div class="login">
+      <div class="login-content">
+      <div>
+        <label for="vacant">vacant:</label><br>
+        <input type="text" id="vacant" name="vacant"><br>
+      </div>
+      <div>
+        <label for="descripcio_vacant">descripcio vacant:</label><br>
+        <input type="descripcio_vacant" id="descripcio_vacant" name="descripcio_vacant"><br><br>
+      </div>
+      <div>
+        <label for="descripcio_treball">descripcio treball:</label><br>
+        <input type="descripcio_treball" id="descripcio_treball" name="descripcio_treball"><br><br>
+      </div>
+      <div>
+        <label for="tipus">tipus:</label><br>
+        <select name="tipus">
+
+        <option>dual</option>
+
+        <option>fct</option>
+
+        <option>laboral</option>
+
+        </select>
+      </div>
+      <input name = "delete" type = "submit"
+      id = "delete" value = "Delete">
+     </div>
+
+    </div>
+  </form>
+
+</body>
+
+</html>
